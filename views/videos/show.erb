@@ -1,0 +1,13 @@
+<h1><%= @video[:title] %></h1>
+<h3><%= @video[:code] %> </h3>
+<h3> <%= @video[:description] %></h3>
+<form action="/videos/<%= @video[:id] %>" method="POST">
+	<input type="hidden" name="_method" value="DELETE">
+	<input type="submit" value="Delete video">
+</form>
+
+<button>
+	<a href="/videos/<%= @video[:id] %>/edit">
+		Edit
+	</a>
+</button>

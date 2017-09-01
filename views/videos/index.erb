@@ -1,0 +1,15 @@
+<h1>My Dog Videos</h1>
+<h2>Hello! Welcome to my video page. Currently, we have <%= @video.length %> videos of dogs. Enjoy!</h1>
+<ul>
+	<% @video.each do |video|%>
+	<div>
+		<h3>
+			<a href="/videos/<%= video[:id] %>">
+				<%= video[:title]%>
+			</a>
+		</h3>
+		<h3><%= video[:code]%></h3>
+		<h4><%= video[:description]%></h4>
+	</div>
+	<% end %>
+</ul>

@@ -1,0 +1,14 @@
+<h1>Create a new video</h1>
+<h3>Please enter a title and description for your video, as well as the embed code. (Videos of dogs only, please)</h3>
+<form action="/videos" method="POST">
+	<label for="title">Title</label>
+	<input type="text" name="title">
+
+	<label for="description">Description</label>
+	<textarea name="description"></textarea>
+
+	<label for="code">Embed code</label>
+	<input name="code"></input>
+
+	<input type="submit" value="Create Video">
+</form>
